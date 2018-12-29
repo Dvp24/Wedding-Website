@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 
 const Registry = new Schema({
   id?,
-  productName: { type: String, required: true },
+  productName: { types: String, required: true },
   description: { type: Text, required: false }
 });
 
