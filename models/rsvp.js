@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const RVSP = new Schema({
+const RSVP = new Schema({
   firstName: { type: String, required: true },
   lastName: { type: String, required: true },
   peopleCount: { type: Number, required: true },

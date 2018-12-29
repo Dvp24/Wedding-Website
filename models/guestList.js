@@ -13,10 +13,6 @@ const guestList = new Schema({
   contactInfo: {}
 });
 
-
-
-
-
 const list = mongoose.model("RSVP", guestList);
 
 module.exports = list;
