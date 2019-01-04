@@ -47,6 +47,39 @@ const registrySeed = [
   }
 ];
 
+const rsvpSeed = [
+  {
+    firstName: "Erica",
+    lastName: "Piano",
+    peopleCount: 1,
+    answer: true,
+    date: new Date(Date.now())
+  },
+  {
+    firstName: "Kerrin",
+    lastName: "Zuco",
+    peopleCount: 2,
+    answer: false,
+    date: new Date(Date.now())
+  }
+];
+
+// DB rsvp
+
+db.rsvp
+  .remove({})
+  .then(() => db.rsvp.collection.insertMany(rsvpSeed))
+  .then(data => {
+    console.log(data.result.n + " records inserted!");
+    process.exit(0);
+  })
+  .catch(err => {
+    console.error(err);
+    process.exit(1);
+  });
+
+//DB guestList
+
 db.list
   .remove({})
   .then(() => db.list.collection.insertMany(guestListSeed))
@@ -58,6 +91,8 @@ db.list
     console.error(err);
     process.exit(1);
   });
+
+// DB rgistry
 
 db.registry
   .remove({})

@@ -6,6 +6,6 @@ const Registry = new Schema({
   description: { type: Text, required: false }
 });
 
-const registry = mongoose.model("RSVP", Registry);
+const registry = mongoose.model("Registry", Registry);
 
 module.exports = registry;

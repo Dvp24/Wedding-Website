@@ -15,6 +15,6 @@ const guestList = new Schema({
   }
 });
 
-const list = mongoose.model("RSVP", guestList);
+const list = mongoose.model("Guest", guestList);
 
 module.exports = list;
