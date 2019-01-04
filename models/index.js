@@ -1,6 +1,5 @@
 module.exports = {
   rsvp: require("./rsvp"),
   registry: require("./registry"),
-  list: require("./guestList"),
-  giftsData: require("./gifts")
+  list: require("./guestList")
 };
